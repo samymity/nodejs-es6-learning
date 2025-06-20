@@ -1,12 +1,23 @@
 import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 const port = 3000;
 
 app.use(express.static('public'));
+app.use('/views', express.static('views'));
 
 app.get('/', (req, res) => {
-  console.log('Hello World!');
-  res.send('Hello World!');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// Route for views
+app.get('/views/:page', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', `${req.params.page}`));
 });
 
 app.listen(port, () => {

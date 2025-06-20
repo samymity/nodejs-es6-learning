@@ -33,10 +33,10 @@ npm install --save-dev nodemon
 - [x] Add remote origin and push initial commit
 
 ### Task 1.3: Create Basic HTML Structure
-- [ ] Create index.html as main landing page
-- [ ] Create basic CSS for styling
-- [ ] Create navigation structure for different ES6 topics
-- [ ] Test HTML serving through Express
+- [x] Create index.html as main landing page
+- [x] Create basic CSS for styling
+- [x] Create navigation structure for different ES6 topics
+- [x] Test HTML serving through Express
 
 ## Phase 2: ES6 Features Implementation (Backend)
 
