@@ -41,12 +41,11 @@ npm install --save-dev nodemon
 ## Phase 2: ES6 Features Implementation (Backend)
 
 ### Task 2.1: Variable Declarations Module
-- [ ] Create modules/variableExamples.js
-- [ ] Demonstrate let, const, var differences
-- [ ] Show block scoping examples
-- [ ] Create API endpoint to serve examples
+- [x] Create modules/variableExamples.js
+- [x] Demonstrate simplified `let`, `const`, `var` differences
+- [x] Create API endpoint to serve examples
 
-**ES6 Concepts:** `let`, `const`, block scoping
+**ES6 Concepts:** `let`, `const`
 
 ### Task 2.2: Arrow Functions Module
 - [ ] Create modules/arrowFunctions.js

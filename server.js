@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import variableExamples from './modules/variableExamples.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,6 +19,11 @@ app.get('/', (req, res) => {
 // Route for views
 app.get('/views/:page', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', `${req.params.page}`));
+});
+
+// API endpoint for variable examples
+app.get('/api/variables', (req, res) => {
+  res.json(variableExamples);
 });
 
 app.listen(port, () => {
