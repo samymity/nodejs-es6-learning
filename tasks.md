@@ -27,6 +27,11 @@ npm install --save-dev nodemon
 - [x] Configure `package.json` with `"type": "module"`
 - [x] Update `server.js` to use `import` instead of `require`
 
+### Task 1.2b: Initialize Git Repository
+- [x] Initialize a new Git repository
+- [x] Create a `.gitignore` file for Node.js
+- [x] Add remote origin and push initial commit
+
 ### Task 1.3: Create Basic HTML Structure
 - [ ] Create index.html as main landing page
 - [ ] Create basic CSS for styling
